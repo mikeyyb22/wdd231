@@ -1,0 +1,18 @@
+@media only screen and (min-width: 38rem) {
+
+    /* Add max width to not take up full screen */
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    /* Only display hamburger in small viewports */
+    .hamburger {
+        display: none;
+    }
+
+}
