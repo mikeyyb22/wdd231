@@ -15,4 +15,9 @@
         display: none;
     }
 
+    /* Display Nav Links in large viewports */
+    .navigation {
+        display: block;
+    }
+
 }

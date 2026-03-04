@@ -45,3 +45,18 @@ header span {
   content: "\00D7";
   font-size: 2rem;
 }
+
+/* ******** NAV ******** */
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 25px;
+}
