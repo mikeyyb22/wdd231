@@ -56,6 +56,15 @@ a {
   color: #3D405B;
 }
 
+a:hover {
+  color: #872657;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; 
+}
+
+a:active, a:visited {
+  color: #872657;
+}
+
 .hamburger::before {
   content: "\2630";
   font-size: 2rem;
@@ -119,7 +128,7 @@ section img {
   border-radius: 5px;
 }
 
-/* ******** COURSES ******** */
+/* ******** COURSES / LISTS ******** */
 
 ul {
   display: grid;
@@ -148,6 +157,7 @@ li {
 .social {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 10px 0px 10px 0px;
 }
 
