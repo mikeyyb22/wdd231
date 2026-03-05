@@ -1,4 +1,5 @@
 /* ******** SITE WIDE ******** */
+
 * {
   font-family: "Josefin Sans", sans-serif;
   box-sizing: border-box;
@@ -13,6 +14,7 @@ header {
   align-items: end;
   border-bottom: solid 1px #ddd;
   column-gap: 8px;
+  color: #3D405B;
 }
 
 header img {
@@ -37,6 +39,23 @@ header span {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+}
+
+a {
+  text-decoration: none;
+  color: #3D405B;
+}
+
 .hamburger::before {
   content: "\2630";
   font-size: 2rem;
@@ -59,4 +78,84 @@ header span {
 .navigation ul {
   display: flex;
   gap: 25px;
+}
+
+/* ******** H1 & SECTIONS ******** */
+
+h1 {
+  padding: 5px 0 5px 10px;
+  border-bottom: solid 1px #ddd;
+  color: #3D405B;
+}
+
+section {
+  border: solid 1px #000;
+  border-radius: 5px;
+  margin: 5px 5px 10px 5px;
+}
+
+h2 {
+  padding: 5px 0 5px 10px;
+  margin-top: 0px;
+  background-color: #3D405B;
+  color: #fff;
+  border-radius: 5px;
+}
+
+p {
+  padding: 5px;
+}
+
+/* ******** PHOTO ******** */
+
+section img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border: solid 1px #3D405B;
+  border-radius: 5px;
+}
+
+/* ******** COURSES ******** */
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+ol {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0px;
+}
+
+li {
+  border: solid 1px #3D405B;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+/* ******** FOOTER ******** */
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px 10px 0px;
+}
+
+footer p {
+  text-align: center;
+  margin: 0px 5px 0px 5px;
+  background-color: #3D405B;
+  border: solid 1px #ddd;
+  border-radius: 5px;
+  color: #fff;
 }
