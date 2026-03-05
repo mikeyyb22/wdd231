@@ -29,7 +29,7 @@
         margin: 0px;
     }
 
-    .navigation ul li {
+    .navigation ul > li {
         width: 100%;
     }
 
