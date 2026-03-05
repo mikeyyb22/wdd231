@@ -130,10 +130,22 @@ section img {
 
 /* ******** COURSES / LISTS ******** */
 
-ul {
+.course-buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 0px;
+  margin: 0px 5px 0px 5px;
+}
+
+.course-buttons button {
+  margin: 0px 5px 0px 5px;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+
+.completed {
+  background-color: #872657;
+  color: #fff;
+  font-weight: bold;
 }
 
 ol {
