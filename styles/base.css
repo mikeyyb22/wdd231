@@ -89,11 +89,6 @@ header span {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.navigation ul {
-  display: flex;
-  justify-content: space-between;
-}
-
 .navigation ul > li {
   display: flex;
   align-items: center;
@@ -125,8 +120,6 @@ a:hover {
   content: "\00D7";
   font-size: 2rem;
 }
-
-/* ******** NAV ******** */
 
 .navigation {
   display: none;
