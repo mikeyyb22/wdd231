@@ -54,6 +54,12 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+        gap: 5px;
+    }
+
+    .cert-courses ol li {
+        width: 90%;
+        margin: 0 auto;
     }
 
     .course-buttons button {
