@@ -10,6 +10,7 @@
     <title>Chattanooga, TN</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
     <!-- JS -->
 
     <!-- Open Graph Meta Properties -->
@@ -20,9 +21,54 @@
     <!-- Favicon -->
     <link rel="icon" href="./images/chattanooga-favicon.ico">
     <!-- Font -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <!-- Hamburger menu -->
+        <img src="./images/chattanooga-seal.jpg" alt="Seal for the city of Chattanooga" width="512" height="auto">
+        <span>Chattanooga Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Chattanooga Business Directory</h1>
+        <div class="button-div">
+            <button id="grid-view" class="grid-view">Grid View</button>
+            <button id="list-view" class="list-view">List View</button>
+        </div>
+        
+        <div id="cards" class="cards"></div>
+    </main>
+    <footer>
+        <div class="ccc-address">
+            <p class="ccc-name">Chattanooga Chamber of Commerce</p>
+            <p>811 Broad St #200</p>
+            <p>Chattanooga, TN 37402</p>
+            <p>United States of America</p>
+        </div>
+        
+        <div class="social">
+            <a href="" target="_blank"><img src="./images/facebook.svg" alt="facebook" width="30" height="30"></a>
+            <a href="" target="_blank"><img src="./images/instagram.svg" alt="instagram" width="30" height="30"></a>
+            <a href="" target="_blank"><img src="./images/twitter.svg" alt="x-twitter" width="30" height="30"></a>
+        </div>
+        <div class="page-info">
+            <p>WDD231 Class Project</p>
+            <p>Michael McGehee</p>
+            <p>&copy; | <span id="currentyear"></span> | Chattanooga Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+        
+    </footer>
 </body>
 </html>
