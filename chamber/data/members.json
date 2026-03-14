@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "A.C.M Construction",
+            "address": "2322 Torey Ct Chattanooga TN 37421",
+            "phone": "(423) 888-2406",
+            "url": "https://acmconstructiontn.com",
+            "img": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/gxOW3fL3zziaGfwXoBEl/media/690d0d985c18810ab1f09824.png",
+            "memberlevel": 2
+        },
+        {
+            "name": "Bounceback Physical Therapy",
+            "address": "1771 E Boy Scout Rd Hixson TN 37343",
+            "phone": "(423) 212-3149",
+            "url": "https://www.bouncebackchatt.com",
+            "img": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/gxOW3fL3zziaGfwXoBEl/media/68ff7b07ab226dc6cd0d3586.png",
+            "memberlevel": 1
+        },
+        {
+            "name": "Tri-State Dump It",
+            "address": "555 Main Street Chattanooga TN 37377",
+            "phone": "(256) 548-6021",
+            "url": "https://www.tristatedumpit.com",
+            "img": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/gxOW3fL3zziaGfwXoBEl/media/68fa3ed28f095e20730b9f02.png",
+            "memberlevel": 1
+        },
+        {
+            "name": "Chattanooga Interpreting",
+            "address": "P.O. Box 406 Hixson TN 37343",
+            "phone": "(423) 834-8884",
+            "url": "https://chattinterpreting.com",
+            "img": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/gxOW3fL3zziaGfwXoBEl/media/68fa363a87b77c8b1544146a.png",
+            "memberlevel": 1
+        },
+        {
+            "name": "Cavitt's Floor Fixation",
+            "address": "444 Main Street Chattanooga TN 37377",
+            "phone": "(423) 664-7038",
+            "url": "https://cavittsfloorfixation.wixsite.com/my-site",
+            "img": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/gxOW3fL3zziaGfwXoBEl/media/67ffd694a9aa7ab55dd6393f.jpeg",
+            "memberlevel": 2
+        },
+        {
+            "name": "Property Rush",
+            "address": "1450 N Mack Smith Road Chattanooga TN 37412",
+            "phone": "(423) 602-7874",
+            "url": "propertyrush.com",
+            "img": "https://media.licdn.com/dms/image/v2/D560BAQE-r8Q6brWJbQ/company-logo_200_200/company-logo_200_200/0/1729355175707/property_rush_logo?e=2147483647&v=beta&t=YPMKfiubH4Ebf99JRizQ_BOsc8auJjR5DRsJDDkNAzk",
+            "memberlevel": 1
+        },
+        {
+            "name": "Tri-Community Fire Dept.",
+            "address": "9769 Sanborn Drive Ooltewah TN 37363",
+            "phone": "(423) 396-3113",
+            "url": "https://www.tricommunityfire.com",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Jzrze8YwNs9HdSK2QkEx2m1AiFY7tT7iog&s",
+            "memberlevel": 3
+        }
+    ]
+}

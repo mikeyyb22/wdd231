@@ -1,0 +1,52 @@
+@media only screen and (min-width: 38rem) {
+    /* ******** HEADER ******** */
+
+    /* Add max width to not take up full screen */
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    /* ******** NAVIGATION ******** */
+
+    /* Only display hamburger in small viewports */
+    .hamburger {
+        display: none;
+    }
+
+    /* Display Nav Links in large viewports */
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 5px;
+    }
+
+    .navigation ul > li {
+        width: 100%;
+    }
+
+    /* ******** FOOTER ******** */
+    .page-info {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* ******** BUSINESS GRID ******** */
+    .grid {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .grid section {
+        width: 100%;
+    }
+}
