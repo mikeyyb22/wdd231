@@ -24,6 +24,7 @@ function showMembers(members) {
         const newphone = document.createElement("p");
         const newurl = document.createElement("p");
         const newlogo = document.createElement("img");
+        const newlevel = document.createElement("p");
         newlogo.src = member.img;
         newlogo.alt = `${member.name} logo`;
         newlogo.height = 150;
@@ -32,12 +33,14 @@ function showMembers(members) {
         newaddress.textContent = address;
         newphone.textContent = phone;
         newurl.textContent = url;
+        newlevel.textContent = `Member level: ${memberlevel}`
         
         newsection.appendChild(newlogo);
         newsection.appendChild(newname);
         newsection.appendChild(newaddress);
         newsection.appendChild(newphone);
         newsection.appendChild(newurl);
+        newsection.appendChild(newlevel);
 
         if (memberlevel === 1) {
             newsection.classList.add("level-one");
