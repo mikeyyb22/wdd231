@@ -135,7 +135,7 @@ a:hover {
 .navigation.show {
   display: block;
 }
-
+ 
 .navigation ul {
   display: flex;
   flex-direction: column;
@@ -225,6 +225,8 @@ footer {
 .grid {
   display: grid;
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .grid section {
@@ -232,6 +234,7 @@ footer {
   border: solid 1px #a3a3a3;
   border-radius: 5px;
   box-shadow: 0px 4px 8px 0px #a3a3a3;
+  min-width: 0;
 }
 
 .grid section img {

@@ -3,7 +3,7 @@
 
     /* Add max width to not take up full screen */
     header, main, nav, footer {
-        max-width: 900px;
+        width: 100%;
         margin: 0 auto;
     }
 
