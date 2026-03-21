@@ -4,10 +4,10 @@
     <!-- Meta & Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="chamber of commerce directory">
-    <meta name="description" content="directory for the chamber of commerce of Chattanooga, Tennesee's website">
+    <meta name="title" content="chamber of commerce home">
+    <meta name="description" content="home page for Chattanooga City Chamber of Commerce">
     <meta name="author" content="Michael McGehee">
-    <title>Directory</title>
+    <title>Chattanooga Chamber of Commerce</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -16,10 +16,11 @@
     <script defer src="../scripts/navigation.js"></script>
     <script defer src="../scripts/date.js"></script>
     <script defer src="./scripts/toggle.js"></script>
+    <script defer src="../scripts/weather.js"></script>
     <!-- Open Graph Meta Properties -->
-    <meta property="og:title" content="Chattanooga Chamber of Commerce Directory">
-    <meta property="og:description" content="Directory for the chamber of commerce of Chattanooga, Tennessee's website.">
-    <meta property="og:url" content="https://mikeyyb22.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Chattanooga Chamber of Commerce Home">
+    <meta property="og:description" content="Home page for the chamber of commerce of Chattanooga, Tennessee's website.">
+    <meta property="og:url" content="https://mikeyyb22.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="./images/chattanooga-seal.jpg">
     <!-- Favicon -->
     <link rel="icon" href="./images/chattanooga-favicon.ico">
@@ -37,22 +38,50 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li class="current"><a href="#">Directory</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="./directory.html">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Chattanooga Business Directory</h1>
-        
-        <div class="button-div">
-            <button id="grid-view" class="grid-view">Grid View</button>
-            <button id="list-view" class="list-view">List View</button>
+        <!-- Hero Image -->
+        <div class="hero-image">
+            <div class="hero-text">
+                <h1>Chattanooga, TN</h1>
+                <p>Chamber of Commerce</p>
+                <!-- CTA link - Join CoC -->
+                <form action="#">
+                    <input type="submit" value="Join">
+                </form>
+            </div>
         </div>
-        <h2>Featured Businesses</h2>
-        <article class="grid"></article>
-
+        <h2>Home</h2>
+        <div class="home-grid">
+            <!-- Current events section -->
+            <div class="current-events">
+                <h3>Events</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quibusdam veritatis sunt doloribus, minus tempore commodi, impedit voluptates atque, eos vitae. Reiciendis at repellat maiores quod, dolor velit! Provident, eaque?</p>
+            </div>
+            <!-- Weather section (JS) -->
+            <div class="current-weather">
+                <h3>Today's Weather</h3>
+                <div class="current-weather-info">
+                    <img id="weather-icon" src="" alt="">
+                    <ul id="current-weather">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="weather-forecast">
+                <h3>Weather forecast</h3>
+            </div>
+            <!-- Section - 2-3 company spotlights (JS) -->
+            <div class="company-spotlight">
+                <article class="grid"></article>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <div class="ccc-address">
