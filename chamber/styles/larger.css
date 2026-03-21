@@ -50,5 +50,23 @@
         width: 100%;
     }
 
-    
+    /* ******** HOME GRID ******** */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .current-events {
+        grid-column-end: span 2;
+    }
+
+    .company-spotlight {
+        grid-column-end: span 4;
+    }
+
+    .spotlight-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
