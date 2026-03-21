@@ -328,7 +328,7 @@ footer {
 /* ******** HOME GRID ******** */
 .home-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px;
   width: 95%;
   margin: 0 auto;
@@ -349,4 +349,35 @@ footer {
 
 .home-grid p {
   padding: 10px;
+}
+
+/* ********** WEATHER ********* */
+/* ******** CURRENT WEATHER ******** */
+.current-weather-info {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.current-weather li {
+  list-style: none;
+  padding: 5px 0px;
+}
+
+#weather-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* ******** WEATHER FORECAST ******** */
+.weather-forecast ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.weather-forecast li {
+  font-size: 2em;
+  list-style: none;
+  padding: 5px 0px;
 }
