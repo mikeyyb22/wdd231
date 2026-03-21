@@ -328,7 +328,7 @@ footer {
 /* ******** HOME GRID ******** */
 .home-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr;
   gap: 5px;
   width: 95%;
   margin: 0 auto;
