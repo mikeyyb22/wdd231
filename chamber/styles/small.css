@@ -585,3 +585,14 @@ dialog ul {
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.4);
 }
+
+/* ******** THANK YOU ******** */
+#results {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-color: #F3F3F3;
+  padding: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
