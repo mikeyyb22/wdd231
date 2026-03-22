@@ -4,10 +4,10 @@
     <!-- Meta & Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="chamber of commerce directory">
-    <meta name="description" content="directory for the chamber of commerce of Chattanooga, Tennesee's website">
+    <meta name="title" content="chamber of commerce join">
+    <meta name="description" content="join page for the chamber of commerce of Chattanooga, Tennesee">
     <meta name="author" content="Michael McGehee">
-    <title>Directory</title>
+    <title>Join Us</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="./styles/small.css">
@@ -15,11 +15,10 @@
     <!-- JS -->
     <script defer src="../scripts/navigation.js"></script>
     <script defer src="../scripts/date.js"></script>
-    <script defer src="./scripts/toggle.js"></script>
     <!-- Open Graph Meta Properties -->
     <meta property="og:title" content="Chattanooga Chamber of Commerce Directory">
-    <meta property="og:description" content="Directory for the chamber of commerce of Chattanooga, Tennessee's website.">
-    <meta property="og:url" content="https://mikeyyb22.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Join page for the chamber of commerce of Chattanooga, Tennessee.">
+    <meta property="og:url" content="https://mikeyyb22.github.io/wdd231/chamber/join.html">
     <meta property="og:image" content="./images/chattanooga-seal.jpg">
     <!-- Favicon -->
     <link rel="icon" href="./images/chattanooga-favicon.ico">
@@ -38,21 +37,39 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li class="current"><a href="#">Directory</a></li>
-            <li><a href="./join.html">Join</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li class="current"><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Chattanooga Business Directory</h1>
-        
-        <div class="button-div">
-            <button id="grid-view" class="grid-view">Grid View</button>
-            <button id="list-view" class="list-view">List View</button>
-        </div>
-        <h2>Featured Businesses</h2>
-        <article class="grid"></article>
-
+        <form action="thankyou.html" method="get">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" title="Your e=mail" autocomplete="email" placeholder="yourname@sample.com" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" title="Your phone number" autocomplete="tel" required>
+            <label for="business">Business/Org Name</label>
+            <input type="text" id="business" name="business" title="Your business/organization name" autocomplete="organization" required>
+            <label for="memberlevel">Membership Level</label>
+            <input type="radio" id="nonprofit" name="memberlevel">
+            <label for="nonprofit">NP Membership</label>
+            <input type="radio" id="bronze" name="memberlevel">
+            <label for="bronze">Bronze Membership</label>
+            <input type="radio" id="silver" name="memberlevel">
+            <label for="silver">Silver Membership</label>
+            <input type="radio" id="gold" name="memberlevel">
+            <label for="gold">Gold Membership</label>
+            <label for="description">Business/Org Description</label>
+            <input type="textarea" id="description" name="description" title="Description of your business/organization">
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber">
+        </form>
     </main>
     <footer>
         <div class="ccc-address">
@@ -61,7 +78,6 @@
             <p>Chattanooga, TN 37402</p>
             <p>United States of America</p>
         </div>
-        
         <div class="social">
             <a href="" target="_blank"><img src="./images/facebook.svg" alt="facebook" width="30" height="30"></a>
             <a href="" target="_blank"><img src="./images/instagram.svg" alt="instagram" width="30" height="30"></a>
