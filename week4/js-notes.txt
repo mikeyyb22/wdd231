@@ -1,0 +1,15 @@
+capture and display HTML form data on a confirmation page using URL query parameters.
+- URLSearchParams - built-in JS object that has methods that easily access, manipulate, and iterate over parameters in URL query string
+- ex:
+-- sample URL - https://example.com/?name=John&age=30
+-- const params = new URLSearchparams(window.location.search);
+-- const name = params.get('name'); // "John"
+-- const age = params.get('age'); // "30"
+- you can also use methods like ".has(), .set(), and .delete()"
+- ex:
+-- if (params.has('name')) {
+    console.log('Name parameter exists!');
+}
+-- params.set('age', 31);
+-- params.delete('name');
+-- const queryString = params.toString(); // "age=31"
