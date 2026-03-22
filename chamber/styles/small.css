@@ -502,7 +502,6 @@ form input[type="submit"] {
   font-weight: 600;
   cursor: pointer;
   letter-spacing: 0.03em;
-  transition: background-color 0.3 ease;
   margin-top: 5px;
 }
 
