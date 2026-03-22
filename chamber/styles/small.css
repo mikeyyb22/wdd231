@@ -535,6 +535,38 @@ form input[type="submit"] {
   border-bottom: solid 1px var(--secondary-color);
 }
 
+.non-profit {
+  transition: background-color 0.5s ease;
+}
+
+.non-profit:hover {
+  background-color: #ADD8E6;
+}
+
+.bronze {
+  transition: background-color 0.5s ease;
+}
+
+.bronze:hover {
+  background-color: #DAAA5E;
+}
+
+.silver {
+  transition: background-color 0.5s ease;
+}
+
+.silver:hover {
+  background-color: #C0C0C0;
+}
+
+.gold {
+  transition: background-color 0.5s ease;
+}
+
+.gold:hover {
+  background-color: #FDDE6C;
+}
+
 /* ******** DIALOGS ******** */
 dialog {
   border: solid 1px #A3A3A3;
