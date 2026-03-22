@@ -506,6 +506,10 @@ form input[type="submit"] {
   margin-top: 5px;
 }
 
+.req {
+  color: #FF2C33;
+}
+
 /* ******** MEMBERSHIP LEVEL CARDS ******** */
 .membership-level-cards {
   display: grid;

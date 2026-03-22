@@ -50,12 +50,12 @@
                 <h2>Membership Application Form</h2>
             
                 <form action="thankyou.html" method="get">
-                    <label for="fname">First name:<input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required></label>
-                    <label for="lname">Last name:<input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required></label>
+                    <label for="fname">First name<span class="req">*</span><input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required></label>
+                    <label for="lname">Last name:<span class="req">*</span><input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required></label>
                     <label for="title">Title:<input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"></label>
-                    <label for="email">E-mail<input type="email" id="email" name="email" title="Your e=mail" autocomplete="email" placeholder="yourname@sample.com" required></label>
-                    <label for="phone">Phone Number<input type="tel" id="phone" name="phone" title="Your phone number" autocomplete="tel" required></label>
-                    <label for="business">Business/Org Name<input type="text" id="business" name="business" title="Your business/organization name" autocomplete="organization" required></label>
+                    <label for="email">E-mail<span class="req">*</span><input type="email" id="email" name="email" title="Your e=mail" autocomplete="email" placeholder="yourname@sample.com" required></label>
+                    <label for="phone">Phone Number<span class="req">*</span><input type="tel" id="phone" name="phone" title="Your phone number" autocomplete="tel" required></label>
+                    <label for="business">Business/Org Name<span class="req">*</span><input type="text" id="business" name="business" title="Your business/organization name" autocomplete="organization" required></label>
                     <label for="memberlevel">Membership Level<input type="radio" id="nonprofit" name="memberlevel">
                     <label for="nonprofit">NP Membership</label>
                     <input type="radio" id="bronze" name="memberlevel">
