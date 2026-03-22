@@ -1,5 +1,5 @@
 const currentWeather = document.querySelector('#current-weather');
-const weatherIcon = document.querySelector('#weather-icon');
+const weatherIconContainer = document.querySelector('.current-weather-info');
 const weatherForecast = document.querySelector('#weather-forecast');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=35.04&lon=-85.30&appid=b99d5a1f1d78d6950d7365021dbfb747&units=imperial'
@@ -38,8 +38,11 @@ async function apiForecastFetch() {
 
 function displayResults(data) {
     let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const weatherIcon = document.createElement('img');
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', 'Icon of current weather');
+
+    weatherIconContainer.appendChild(weatherIcon);
 
     let currentTemp = data.main.temp;
     let highTemp = data.main.temp_max;
