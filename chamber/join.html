@@ -15,6 +15,7 @@
     <!-- JS -->
     <script defer src="../scripts/navigation.js"></script>
     <script defer src="../scripts/date.js"></script>
+    <script defer src="./scripts/modals.js"></script>
     <!-- Open Graph Meta Properties -->
     <meta property="og:title" content="Chattanooga Chamber of Commerce Directory">
     <meta property="og:description" content="Join page for the chamber of commerce of Chattanooga, Tennessee.">
@@ -43,33 +44,86 @@
         </ul>
     </nav>
     <main>
+        <h1>Join the Chattanooga CoC!</h1>
         <form action="thankyou.html" method="get">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required>
-            <label for="title">Title:</label>
-            <input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" title="Your e=mail" autocomplete="email" placeholder="yourname@sample.com" required>
-            <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" title="Your phone number" autocomplete="tel" required>
-            <label for="business">Business/Org Name</label>
-            <input type="text" id="business" name="business" title="Your business/organization name" autocomplete="organization" required>
-            <label for="memberlevel">Membership Level</label>
-            <input type="radio" id="nonprofit" name="memberlevel">
+            <label for="fname">First name:<input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required></label>
+            <label for="lname">Last name:<input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required></label>
+            <label for="title">Title:<input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"></label>
+            <label for="email">E-mail<input type="email" id="email" name="email" title="Your e=mail" autocomplete="email" placeholder="yourname@sample.com" required></label>
+            <label for="phone">Phone Number<input type="tel" id="phone" name="phone" title="Your phone number" autocomplete="tel" required></label>
+            <label for="business">Business/Org Name<input type="text" id="business" name="business" title="Your business/organization name" autocomplete="organization" required></label>
+            <label for="memberlevel">Membership Level<input type="radio" id="nonprofit" name="memberlevel">
             <label for="nonprofit">NP Membership</label>
             <input type="radio" id="bronze" name="memberlevel">
             <label for="bronze">Bronze Membership</label>
             <input type="radio" id="silver" name="memberlevel">
             <label for="silver">Silver Membership</label>
             <input type="radio" id="gold" name="memberlevel">
-            <label for="gold">Gold Membership</label>
-            <label for="description">Business/Org Description</label>
-            <input type="textarea" id="description" name="description" title="Description of your business/organization">
+            <label for="gold">Gold Membership</label></label>
+            <label for="description">Business/Org Description<input type="textarea" id="description" name="description" title="Description of your business/organization"></label>
             <input type="hidden" name="timestamp" id="timestamp">
             <input type="submit" value="Join the Chamber">
         </form>
+        <div class="membership-level-cards">
+            <div class="non-profit">
+                <h2>Non-Profit Level</h2>
+                <button class="card-trigger" data-target="nonprofit-member">More Info</button>
+            </div>
+            <div class="bronze">
+                <h2>Bronze Level</h2>
+                <button class="card-trigger" data-target="bronze-member">More Info</button>
+            </div>    
+            <div>
+                <h2>Silver Level</h2>
+                <button class="card-trigger" data-target="silver-member">More Info</button>
+            </div>
+            <div>    
+                <h2>Gold Level</h2>
+                <button class="card-trigger" data-target="gold-member">More Info</button>
+            </div>
+            <dialog id="nonprofit-member">
+                <h2>Non-profit Membership</h2>
+                <ul>
+                    <li>$0</li>
+                    <li>Event discounts</li>
+                    <li>Basic advertising</li>
+                    <li>Basic training</li>
+                </ul>
+                <button id="close-np">Close</button>
+            </dialog>
+            <dialog id="bronze-member">
+                <h2>Bronze Membership</h2>
+                <ul>
+                    <li>$25</li>
+                    <li>Event discounts</li>
+                    <li>Basic advertising</li>
+                    <li>Basic training</li>
+                </ul>
+                <button id="close-bronze">Close</button>
+            </dialog>
+            <dialog id="silver-member">
+                <h2>Silver Membership</h2>
+                <ul>
+                    <li>$50</li>
+                    <li>Event discounts</li>
+                    <li>Increased advertising</li>
+                    <li>Increased training</li>
+                    <li>Spotlight position on homepage</li>
+                </ul>
+                <button id="close-silver">Close</button>
+            </dialog>
+            <dialog id="gold-member">
+                <h2>Gold Membership</h2>
+                <ul>
+                    <li>$100</li>
+                    <li>Event discounts</li>
+                    <li>Maximum advertising</li>
+                    <li>Maximum training</li>
+                    <li>Spotlight position on homepage</li>
+                </ul>
+                <button id="close-gold">Close</button>
+            </dialog>
+        </div>
     </main>
     <footer>
         <div class="ccc-address">
