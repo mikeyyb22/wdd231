@@ -16,8 +16,9 @@
     <script defer src="../scripts/navigation.js"></script>
     <script defer src="../scripts/date.js"></script>
     <script defer src="./scripts/modals.js"></script>
+    <script defer src="./scripts/timestamp.js"></script>
     <!-- Open Graph Meta Properties -->
-    <meta property="og:title" content="Chattanooga Chamber of Commerce Directory">
+    <meta property="og:title" content="Chattanooga Chamber of Commerce Join Page">
     <meta property="og:description" content="Join page for the chamber of commerce of Chattanooga, Tennessee.">
     <meta property="og:url" content="https://mikeyyb22.github.io/wdd231/chamber/join.html">
     <meta property="og:image" content="./images/chattanooga-seal.jpg">
@@ -49,7 +50,7 @@
             <div class="join-form">
                 <h2>Membership Application Form</h2>
             
-                <form action="thankyou.html" method="get">
+                <form method="GET" action="thankyou.html" method="get">
                     <label for="fname">First name<span class="req">*</span><input type="text" id="fname" name="fname" title="First Name" autocomplete="given-name" required></label>
                     <label for="lname">Last name:<span class="req">*</span><input type="text" id="lname" name="lname" title="Last Name" autocomplete="family-name" required></label>
                     <label for="title">Title:<input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}"></label>
@@ -65,7 +66,7 @@
                     <input type="radio" id="gold" name="memberlevel">
                     <label for="gold">Gold Membership</label></label>
                     <label for="description">Business/Org Description<input type="textarea" id="description" name="description" title="Description of your business/organization"></label>
-                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
                     <input type="submit" value="Join the Chamber">
                 </form>
             </div>
