@@ -93,6 +93,9 @@ function displayCourses(courseArray) {
         }
 
         courseList.appendChild(li);
+        courseList.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
     })
 
     const totalCredits = courseArray.reduce((total, course) => total + course.credits, 0);

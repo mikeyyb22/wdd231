@@ -1,0 +1,72 @@
+animation property in CSS
+- use @keyframes to create an animation by naming it and defining what should happen at different points (keyframes) during the animation's timeline (0%, 50%, 100%)
+- ex:
+-- @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+-- @keyframes fadeColor {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
+- can be defined directly through animation shortcut property, or by its sub-properties:
+-- animation-name: Specifies the name of the @keyframes animation to apply to the element.
+-- animation-duration: Defines how long the animation takes to complete one cycle.
+-- animation-timing-function: Controls the speed curve of the animation, such as linear or ease-in.
+-- animation-delay: Sets how long to wait before the animation starts.
+-- animation-iteration-count: Specifies how many times the animation should repeat.
+-- animation-direction: Determines whether the animation should play forward, backward, or alternate directions.
+-- animation-fill-mode: Defines how styles are applied before and after the animation runs.
+-- animation: A shorthand property to specificy several animation sub-properties all at once
+-- ex:
+--- .box {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+} --> applies fadeIn animation to a box class
+--- .box {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+    /* shorthand */
+    animation: fadeColor 2s ease-in-out infinite alternate;
+}
+
+
+transition property
+- transition-property: Specifies the CSS property or properties that should transition when they change.
+- transition-duration: Defines how long the transition takes to complete.
+- transition-timing-function: Controls the speed curve of the transition, such as ease, linear, ease-in-out.
+- transition-delay: Sets how long to wait before starting the transition after a property change.
+- transition: A shorthand property for all the transition properties.
+- ex:
+-- .box {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid #ccc;
+
+        transition: background-color 0.5s ease;
+    }
+    .box:hover {
+        background-color: lightblue;
+    } --> smoothly transitions from white to light blue background over 0.5 seconds when user hovers over box
+
+
+transform property --> apply 2d or 3d transformations to element
+- translate(x, y): Moves the element left/right (x) and up/down (y).
+- rotate(angle): Rotates the element by a specified angle (for example, rotate(45deg)).
+- scale(x, y): Resizes the element (for example, scale(1.5) makes it 150% larger).
+- skew(x-angle, y-angle): Skews the element along the x or y axis.
+- ex:
+--  .box {
+        transform: rotate(15deg) translateX(20px) scale(1.2);
+    } --> rotates 15 degrees, moves 20 pixels to the right, and enlarges by 120%
