@@ -507,3 +507,45 @@ form input[type="submit"] {
 }
 
 /* ******** MEMBERSHIP LEVEL CARDS ******** */
+.membership-level-cards {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  width: 92%;
+  margin: 0 auto 30px;
+}
+
+.membership-level-cards > div {
+  border: solid 1px #A3A3A3;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 0px #A3A3A3;
+  padding: 10px;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.membership-level-cards h3 {
+  font-size: 0.95rem;
+  margin: 0 0 8px 0;
+  padding-bottom: 8px;
+  border-bottom: solid 1px var(--secondary-color);
+}
+
+/* ******** DIALOGS ******** */
+dialog {
+  border: solid 1px #A3A3A3;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+}
+
+dialog ul {
+  padding-left: 20px;
+  margin: 10px 0;
+  color: #333;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
