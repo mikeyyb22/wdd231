@@ -446,7 +446,7 @@ form {
   border-radius: 5px;
 }
 
-form > label {
+form > label, form > p {
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -503,6 +503,11 @@ form input[type="submit"] {
   cursor: pointer;
   letter-spacing: 0.03em;
   margin-top: 5px;
+}
+
+textarea {
+  margin: 5px;
+  border-radius: 5px;
 }
 
 .req {
