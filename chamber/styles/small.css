@@ -492,7 +492,7 @@ form input[type="radio"] {
   cursor: pointer;
 }
 
-form input[type="submit"] {
+form #join-submit {
   background-color: var(--primary-color);
   color: #FFF;
   border: none;
