@@ -292,8 +292,11 @@ footer {
 /* ******** HERO ********* */
 .hero-image {
   position: relative;
-  height: 400px;
-  overflow: hidden;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  border-radius: 5px;
 }
 
 .hero-img {
@@ -304,6 +307,7 @@ footer {
   object-fit: cover;
   object-position: center;
   z-index: 0;
+  border-radius: 5px;
 }
 
 .hero-image::after {
@@ -312,6 +316,7 @@ footer {
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+  border-radius: 5px;
 }
 
 .hero-text {
@@ -326,6 +331,8 @@ footer {
 
 .hero-text > h1 {
   color: #fff;
+  width: 100%;
+  font-size: 1.3rem;
 }
 
 .hero-text > form > input {

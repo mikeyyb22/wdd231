@@ -71,7 +71,24 @@
     }
 
     /* ******** HERO ******** */
-    
+    .hero-image {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+    .hero-img {
+        border-radius: 0px;
+    }
+
+    .hero-image::after {
+        border-radius: 0px;
+    }
+
+    .hero-text > h1 {
+        font-size: 2rem;
+    }
 
     /* ******** FORM / CARD / DIALOG ******** */
     .join-layout {
