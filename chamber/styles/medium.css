@@ -1,0 +1,17 @@
+@media only screen and (min-width: 38rem) {
+
+    /* ******** GRID AREAS ******** */
+
+    #allplaces div {
+        grid-template-areas:
+        "photograph name"
+        "photograph description"
+        "photograph location"
+        "photograph button"
+    }
+    
+    #allplaces div figure {
+        width: 300px;
+    }
+
+}

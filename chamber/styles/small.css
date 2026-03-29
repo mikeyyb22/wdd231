@@ -607,3 +607,47 @@ dialog::backdrop {
   border: 1px solid #333;
   border-radius: 5px;
 }
+
+/* ******** GRID AREAS ******** */
+
+#allplaces div {
+  margin: 1rem 8px;
+  border: 1px solid #999;
+  background-color: #EEE;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas:
+  "name"
+  "photograph"
+  "description"
+  "location"
+  "button";
+}
+
+#allplaces div h2 {
+  margin: rem 10px;
+  grid-area: name;
+}
+
+#allplaces div img {
+  width: 100%;
+  grid-area: photograph;
+}
+
+#allplaces div p {
+  margin: 1rem 10px;
+  grid-area: description;
+}
+
+#allplaces div address {
+  margin: 1rem 10px;
+  grid-area: location;
+}
+
+#allplaces div button {
+  margin: 1rem 10px;
+  grid-area: button;
+  border-radius: 3px;
+}
