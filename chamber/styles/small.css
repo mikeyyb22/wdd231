@@ -627,7 +627,8 @@ dialog::backdrop {
 }
 
 #allplaces div h2 {
-  margin: rem 10px;
+  margin: 20px 10px;
+  padding: 0px;
   grid-area: name;
 }
 
