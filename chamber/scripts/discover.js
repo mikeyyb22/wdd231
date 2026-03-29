@@ -21,6 +21,7 @@ function showPlaces(places) {
         const img = document.createElement("img");
         img.src = fullUrl;
         img.alt = `${description}`;
+        img.classList.add("hover");
         button.type = "button";
         button.textContent = "Learn More";
 

@@ -651,3 +651,9 @@ dialog::backdrop {
   grid-area: button;
   border-radius: 3px;
 }
+
+/* ******** LAST VISITED ********* */
+#lastvisited {
+  text-align: center;
+  margin: 0;
+}

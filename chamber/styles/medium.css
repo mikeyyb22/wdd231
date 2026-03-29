@@ -13,5 +13,8 @@
     #allplaces div figure {
         width: 300px;
     }
-
+    /* **HOVER EFFECT** */
+    .hover:hover {
+        box-shadow: 0 0 25px #333;
+    }
 }
