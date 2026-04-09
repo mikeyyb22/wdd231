@@ -287,6 +287,13 @@ header span {
     color: var(--bg-primary);
 }
 
+#phase-progress {
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    margin: 3px;
+    text-align: center;
+}
+
 /* ******** FILTER BAR ******** */
 .filter-bar {
     display: flex;
@@ -351,6 +358,11 @@ header span {
 .location-card .card-progress span {
     color: var(--accent-gold);
     font-weight: 700;
+}
+
+.location-card.completed {
+    opacity: 0.4;
+    border-color: var(--accent-red);
 }
 
 /* ******** MODAL ******** */

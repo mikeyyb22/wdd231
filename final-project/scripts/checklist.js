@@ -23,6 +23,7 @@ const modalItems = document.querySelector('#modal-items');
 const modalProgress = document.querySelector('#modal-progress-count');
 const modalClose = document.querySelector('#modal-close');
 const filterBtns = document.querySelectorAll('.filter-btn');
+const phaseProgress = document.querySelector('#phase-progress');
 
 // ******** PROGRESS ********
 function updateProgress() {
@@ -92,7 +93,26 @@ function renderLocationCards() {
             openModal(locationName, items);
         });
 
+        if (locationChecked === locationTotal && locationTotal > 0) {
+            card.classList.add('completed');
+        }
+
         locationCards.appendChild(card);
+
+        let phaseTotal = 0;
+        let phaseChecked = 0;
+
+        Object.keys(currentPhase).forEach((locationName) => {
+            currentPhase[locationName].forEach((item) => {
+                const itemKey = `${phaseNames[currentPhaseIndex]}-${locationName}-${item.name}`;
+                phaseTotal++;
+                if (checkedItems[itemKey]) {
+                    phaseChecked++;
+                }
+            });
+        });
+
+        phaseProgress.textContent = `${phaseChecked} / ${phaseTotal}`;
     });
 }
 
@@ -105,10 +125,10 @@ function openModal(locationName, items) {
         ? items
         : items.filter((item) => item.type === activeFilter);
     
-    let locationTotal = items.length;
+    let locationTotal = filteredItems.length;
     let locationChecked = 0;
 
-    items.forEach((item) => {
+    filteredItems.forEach((item) => {
         const itemKey = `${phaseNames[currentPhaseIndex]}-${locationName}-${item.name}`;
         if (checkedItems[itemKey]) {
             locationChecked++;
