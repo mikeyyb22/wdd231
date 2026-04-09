@@ -427,6 +427,11 @@ dialog::backdrop {
     transition: border-color 0.3s ease-in-out;
 }
 
+.modal-item.checked {
+    opacity: 0.4;
+    border-color: var(--accent-red);
+}
+
 .modal-item:hover {
     border-color: var(--primary-color);
 }

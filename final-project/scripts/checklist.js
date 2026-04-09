@@ -22,7 +22,7 @@ const modalTitle = document.querySelector('#modal-title');
 const modalItems = document.querySelector('#modal-items');
 const modalProgress = document.querySelector('#modal-progress-count');
 const modalClose = document.querySelector('#modal-close');
-const filterBtns = document.querySelector('.filter-btn');
+const filterBtns = document.querySelectorAll('.filter-btn');
 
 // ******** PROGRESS ********
 function updateProgress() {
@@ -121,14 +121,16 @@ function openModal(locationName, items) {
         const itemKey = `${phaseNames[currentPhaseIndex]}-${locationName}-${item.name}`;
         const isChecked = checkedItems[itemKey];
 
-        if (isChecked) return;
-
         const li = document.createElement('li');
         const img = document.createElement('img');
         const nameSpan = document.createElement('span');
         const typeSpan = document.createElement('span');
 
-        li.classList.add('modal-item');
+        li.classList.add('modal-item'); 
+        if (isChecked) {
+            li.classList.add('checked');
+        }
+        
         nameSpan.classList.add('item-name');
         typeSpan.classList.add('item-type');
         
@@ -153,7 +155,11 @@ function openModal(locationName, items) {
 
 // ******* CHECK ITEM ********
 function checkItem(itemKey, locationName, items) {
-    checkedItems[itemKey] = true;
+    if (checkedItems[itemKey]) {
+        delete checkedItems[itemKey];
+    } else {
+        checkedItems[itemKey] = true;
+    }
     localStorage.setItem('platinumProgress', JSON.stringify(checkedItems));
 
     updateProgress();
