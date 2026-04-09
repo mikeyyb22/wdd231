@@ -66,10 +66,10 @@ function renderLocationCards() {
         
         if (filteredItems.length === 0) return;
 
-        let locationTotal = items.length;
+        let locationTotal = filteredItems.length;
         let locationChecked = 0;
 
-        items.forEach((item) => {
+        filteredItems.forEach((item) => {
             const itemKey = `${phaseNames[currentPhaseIndex]}-${locationName}-${item.name}`;
             if (checkedItems[itemKey]) {
                 locationChecked++;
@@ -130,7 +130,7 @@ function openModal(locationName, items) {
         if (isChecked) {
             li.classList.add('checked');
         }
-        
+
         nameSpan.classList.add('item-name');
         typeSpan.classList.add('item-type');
         
