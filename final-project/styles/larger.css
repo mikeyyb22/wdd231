@@ -66,6 +66,40 @@
         margin: 0 auto;
     }
 
+    /* ******** PROGRESS TRACKER ******** */
+    .progress-tracker {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 20px 40px;
+    }
+
+    /* ******** PHASE NAVIGATOR ******** */
+    .phase-navigator {
+        max-width: 1200px;
+        margin: 15px auto;
+        padding: 12px 40px;
+    }
+
+    /* ******** FILTER BAR ******** */
+    .filter-bar {
+        max-width: 1200px;
+        margin: 10px auto 15px auto;
+        padding: 0 40px;
+    }
+
+    /* ******** LOCATION CARDS ******** */
+    #location-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1200px;
+        margin: 10px auto;
+        padding: 0 40px;
+    }
+
+    /* ******** MODAL ******** */
+    dialog {
+        max-width: 600px;
+    }
+
     /* ******** FOOTER ******** */
     footer {
         flex-direction: row;

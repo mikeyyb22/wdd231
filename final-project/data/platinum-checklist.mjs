@@ -138,7 +138,7 @@ const platinumChecklist = {
           "sprite": ""
         }
       ],
-      "Jublife City": [
+      "Jubilife City": [
         {
           "name": "Stardust",
           "type": "Item",
@@ -458,7 +458,7 @@ const platinumChecklist = {
           "sprite": "https://archives.bulbagarden.net/media/upload/7/74/Spr_DP_Lass.png"
         }
       ],
-      "Ravaged path": [
+      "Ravaged Path": [
         {
           "name": "Potion",
           "type": "Item",
