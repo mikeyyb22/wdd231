@@ -108,6 +108,7 @@ header span {
     gap: 20px;
     padding: 15px 0;
     list-style: none;
+    margin: 0;
 }
 
 .navigation ul > li {
