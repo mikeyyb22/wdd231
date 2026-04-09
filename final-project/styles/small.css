@@ -12,3 +12,229 @@
     --border-color: #333333;
 }
 
+/* ******** SITE WIDE ******** */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--accent-gold);
+    transition: color 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: solid 1px var(--accent-gold);
+}
+
+/* ******** HEADER ******** */
+header {
+    display: grid;
+    grid-template-columns: 32px auto 44px;
+    padding: 8px 10px;
+    align-items: center;
+    column-gap: 10px;
+    background-color: var(--bg-secondary);
+    border-bottom: solid 1px var(--accent-gold);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* ******** HAMBURGER NAVIGATION ******** */
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+    background-color: var(--bg-secondary);
+    border-bottom: solid 1px var(--border-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    list-style: none;
+}
+
+.navigation ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+}
+
+.current a {
+    color: var(--accent-gold);
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+/* ******** HERO ******** */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+    background-color: var(--bg-secondary);
+    border-bottom: solid 1px var(--border-color);
+    gap: 20px;
+}
+
+.hero-text p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: var(--accent-gold);
+    color: var(--bg-primary);
+    border-radius: 3px;
+    padding: 10px 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-primary);
+}
+
+.hero-img img {
+    width: 150px;
+    height: auto;
+}
+
+/* ******** STATS BAR ******** */
+.stats-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 15px;
+    background-color: var(--bg-card);
+    border-bottom: solid 1px var(--border-color);
+}
+
+.stat {
+    text-align: center;
+    padding: 10px 20px;
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+.stat-label {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    color: var(--accent-gold);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* ******** EXPLAINER ******** */
+.explainer {
+    padding: 25px 15px;
+    margin: 15px 10px;
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    background-color: var(--bg-card);
+}
+
+.explainer p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ******** FOOTER ******** */
+footer {
+    background-color: var(--bg-secondary);
+    border-top: solid 1px var(--accent-gold);
+    padding: 20px 15px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.site-name {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.site-info p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.page-info p {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
