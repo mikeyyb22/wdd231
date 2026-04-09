@@ -496,3 +496,134 @@ footer {
     font-size: 0.85rem;
     margin-top: 5px;
 }
+
+/* ******** FEEDBACK PAGE ******** */
+.feedback-intro {
+    text-align: center;
+    color: var(--text-secondary);
+    margin: 10px 15px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 92%;
+    margin: 20px auto;
+    background-color: var(--bg-card);
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: solid 1px var(--border-color);
+    border-radius: 3px;
+    font-size: 1rem;
+    color: var(--text-primary);
+    background-color: var(--bg-secondary);
+    font-family: "Ubuntu", sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 2px rgba(201, 168, 76, 0.15);
+}
+
+form input[type="file"] {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+#feedback-submit {
+    background-color: var(--accent-gold);
+    color: var(--bg-primary);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#feedback-submit:hover {
+    background-color: var(--primary-color);
+}
+
+.req {
+    color: var(--accent-red);
+}
+
+.optional {
+    color: var(--text-secondary);
+    font-weight: 400;
+    font-size: 0.85rem;
+}
+
+/* ******** THANK YOU PAGE ******** */
+#results {
+    width: 92%;
+    margin: 20px auto;
+    background-color: var(--bg-card);
+    border: solid 1px var(--border-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#results p {
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+}
+
+#submission-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+#submission-details li {
+    padding: 8px 10px;
+    background-color: var(--bg-secondary);
+    border: solid 1px var(--border-color);
+    border-radius: 3px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+#submission-details strong {
+    color: var(--accent-gold);
+}
+
+.thankyou-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    width: 92%;
+}
