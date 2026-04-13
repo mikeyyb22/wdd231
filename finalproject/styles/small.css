@@ -397,8 +397,8 @@ dialog::backdrop {
 
 #modal-close {
     background: none;
-    border: solid 1px var(--accent-red);
-    color: var(--accent-red);
+    border: solid 1px #EE4B2B;
+    color: #EE4B2B;
     font-size: 1.2rem;
     padding: 2px 8px;
     border-radius: 3px;
@@ -407,7 +407,7 @@ dialog::backdrop {
 }
 
 #modal-close:hover {
-    background-color: var(--accent-red);
+    background-color: #EE4B2B;
     color: var(--text-primary);
 }
 
